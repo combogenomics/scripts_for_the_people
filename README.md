@@ -3,11 +3,13 @@ Commonly used scripts for basic computational biology tasks
 
 # Scripts description
 1. Headerparser.py
+
     Headerparser.py is a script useful to modify headers in protein fasta files
     (.faa) in 3 ways. Using the --long, --short (DEFAULT) and --veryshort
     arguments the user is allowed to get the header in the 3 forms. 
 
 2. Intergenic_finder.py
+
     This script is useful for the extraction of Intergenic regions (or custumized intergenic  spots) from a
     genome, giving a fasta (.fna) file and file reporting gene and region features (.gff, .gff3) at the command line.
     The script finds the starting and ending point of genes (coding regions) and allows the extraction of the sequences
