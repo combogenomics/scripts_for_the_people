@@ -188,10 +188,10 @@ if ".gff" in os.path.splitext(GFF)[1]:
             pass
         else:
             Field = locus_extract(line,2)
-            if "region" in Field:
+            if Field == "region":
                 outer.append(int_intergenic)
                 int_intergenic = []
-            if "gene" in Field:
+            if Field == "gene":
                 int_intergenic.append(line)
     GFF.close()
 else:
