@@ -36,7 +36,7 @@ Example on how to run the script:
 python3 multigenomeLoader.py --num 10 --exclude_sp --getstrain Escherichia
 
 A future release could:
--  fix the slow download of files and the possibility to update the Parsed tree files, generating new ones downloading new names.dmp and nodes.dmp from ncbi ftp taxdump folder (needs to be done every once in a while)
+- Include the possibility to update the Parsed tree files, generating new ones downloading new names.dmp and nodes.dmp from ncbi ftp taxdump folder (needs to be done every once in a while)
 - automatically download assembly_summary_refseq.txt.
 - Increase download speed.
 
