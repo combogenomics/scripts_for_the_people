@@ -24,7 +24,7 @@ Commonly used scripts for basic computational biology tasks
 
 This script allows to massively download the Genome, Proteome, and Features of all the organisms belonging to the same taxonomic unit.
 The user only have to specify at the command line the taxonomic unit (e.g. Burkholderiaceae) and the script will automatically download
-all the related species and subspecies data available (that at least have data for "Complete Genomes" or "Chromosome") from NCBI database (using Refseq accessions). The files will be found into Genomes, Proteomes, Features folders, in the same direcThe program only need in the same directory the parsed taxonomic tree files taxonomyNames.pkl and taxonomyParsedTree.pkl, available xzipped (xz -d to decompress) in the same subfolder, and the assembly_summary_refseq.txt file, to be downloaded at ftp://ftp.ncbi.nlm.nih.gov/genomes/refseq/ .
+all the related species and subspecies data available (that at least have data for "Complete Genomes" or "Chromosome") from NCBI database (using Refseq accessions). The files will be found into Genomes, Proteomes, Features folders, in the same directory. The program only need in the same directory the parsed taxonomic tree files taxonomyNames.pkl and taxonomyParsedTree.pkl, available xzipped (xz -d to decompress) in the same subfolder, and the assembly_summary_refseq.txt file, to be downloaded at ftp://ftp.ncbi.nlm.nih.gov/genomes/refseq/ .
 The script has the below options:
 The flag --num allows to choose the number of organisms the user want to get/download; the organisms data will be downloaded randomly from the total pool of the available ones
 The flag --getstrain allows to get the strain name for each downloaded organism data: it will be shown in the organism file names.
