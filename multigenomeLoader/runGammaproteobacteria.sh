@@ -10,4 +10,4 @@ tar xz taxonomyNames.pkl.xz
 tar xz taxonomyParsedTree.pkl.xz
 
 # Run Loader
-python3 multiGenomeLoader.py Gammaproteobacteria --download
+python3 multigenomeLoader.py Gammaproteobacteria --download
