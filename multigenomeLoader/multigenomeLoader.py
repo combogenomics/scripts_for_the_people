@@ -320,9 +320,9 @@ if args.download:
         finalURLproteome = url1 + '/' + getname + '_protein.faa.gz'
 
         #print(f"\nfiles to be dowloaded: {args.num + 3 - n}\nStarting download of {name} files")
-        outputFeature = "Features/" + name + '_genomic.gff.gz'
-        outputGenome = "Genomes/" + name + '_genomic.fna.gz'
-        outputProteome = 'Proteomes/' + name + '_protein.faa.gz'
+        outputFeature = "Features/" + name.replace('/','-') + '_genomic.gff.gz'
+        outputGenome = "Genomes/" + name.replace('/', '-') + '_genomic.fna.gz'
+        outputProteome = 'Proteomes/' + name.replace('/', '-') + '_protein.faa.gz'
         final = wget.download(finalURLgenome, outputGenome)
         final2 = wget.download(finalURLfeature, outputFeature)
         final3 = wget.download(finalURLproteome, outputProteome)
